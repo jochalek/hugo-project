@@ -6,28 +6,28 @@ relativeURLs = true
 enableEmoji = true
 googleAnalytics = ""
 enableRobotsTXT = true
-copyright = "&copy; Copyright Year, Your Name"
+copyright = "&copy; 2020, Justin Ochalek"
 
 # Main menu items
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    title = "About"
-    url = "/about/"
-    weight = -110
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "About"
+#    title = "About"
+#    url = "/about/"
+#    weight = -110
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     title = "Posts"
     url = "/post/"
     weight = -100
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    title = "Categories"
-    url = "/categories/"
-    weight = -90
+#  [[menu.main]]
+#    identifier = "categories"
+#    name = "Categories"
+#    title = "Categories"
+#    url = "/categories/"
+#    weight = -90
 
 # Configuration Features
 [params]
