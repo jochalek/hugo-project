@@ -52,3 +52,16 @@ copyright = "&copy; 2020, Justin Ochalek"
 #  [[params.social]]
 #    fa_icon = "fas fa-at fa-1x"
 #    href = ""
+[markup]
+  [markup.highlight]
+#    anchorLineNos = false
+#    codeFences = true
+#    guessSyntax = false
+#    hl_Lines = ""
+#    lineAnchors = ""
+#    lineNoStart = 1
+#    lineNos = false
+#    lineNumbersInTable = true
+#    noClasses = true
+    style = "manni"
+#    tabWidth = 4
