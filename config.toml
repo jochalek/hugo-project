@@ -1,67 +1,105 @@
 baseURL = "https://jochalek.github.io"
 title = "Justin Ochalek"
 languageCode = "en-us"
-theme = "devise"
-relativeURLs = true
-enableEmoji = true
-googleAnalytics = ""
-enableRobotsTXT = true
-copyright = "&copy; 2020, Justin Ochalek"
+theme        = "hello-friend-ng"
 
-# Main menu Items
+# relativeURLs = true
+enableEmoji = true
+# googleAnalytics = ""
+enableRobotsTXT = true
+# copyright = "&copy; 2020, Justin Ochalek"
+
+paginate     = 10
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Justin Ochalek"
+
+[params]
+  dateform        = "Dec 16, 2020"
+  dateformShort   = "Dec 16"
+  dateformNum     = "2020-12-16"
+  dateformNumTime = "2020-12-16 20:23"
+
+  # Subtitle for home
+  homeSubtitle = "Medical Student // Informatics Enthusiast"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you linke
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "This is where I explore interesting ideas"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/jochalek"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "http://linkedin.com/in/justin-ochalek-b9278a64"
+
+[languages]
+  [languages.en]
+    title = "Justin Ochalek"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "cd /home/"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
 [menu]
-#  [[menu.main]]
-#    identifier = "about"
-#    name = "About"
-#    title = "About"
-#    url = "/about/"
-#    weight = -110
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
-    title = "Posts"
-    url = "/post/"
-    weight = -100
-#  [[menu.main]]
-#    identifier = "categories"
-#    name = "Categories"
-#    title = "Categories"
-#    url = "/categories/"
-#    weight = -90
-
-# Configuration Features
-[params]
-  description = "Medical Student"      # Your meta description of the site
-  header_title = "Justin Ochalek"                 # Your header title
-  header_subtitle = "This is where I explore interesting ideas" # Your header subtitle
-  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
-  recent_posts = 5                           # Max amount of recent posts to show
-  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
-  [params.style]                             # CSS style overrides
-    backgroundColor = "#f8f9fa"
-    fontColor = "#212529"
-  [[params.social]]
-    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
-    href = "http://github.com/jochalek"      # Link to associate with icon (http://, https://, mailto:)
-  [[params.social]]
-    fa_icon = "fab fa-linkedin-in fa-1x"
-    href = "http://linkedin.com/in/justin-ochalek-b9278a64"
-#  [[params.social]]
-#    fa_icon = "fab fa-twitter fa-1x"
-#    href = ""
-#  [[params.social]]
-#    fa_icon = "fas fa-at fa-1x"
-#    href = ""
-[markup]
-  [markup.highlight]
-#    anchorLineNos = false
-#    codeFences = true
-#    guessSyntax = false
-#    hl_Lines = ""
-#    lineAnchors = ""
-#    lineNoStart = 1
-#    lineNos = false
-#    lineNumbersInTable = true
-#    noClasses = true
-    style = "manni"
-#    tabWidth = 4
+    name       = "Posts"
+    url        = "posts/"
