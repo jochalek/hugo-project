@@ -8,7 +8,7 @@ googleAnalytics = ""
 enableRobotsTXT = true
 copyright = "&copy; 2020, Justin Ochalek"
 
-# Main menu items
+# Main menu Items
 [menu]
 #  [[menu.main]]
 #    identifier = "about"
